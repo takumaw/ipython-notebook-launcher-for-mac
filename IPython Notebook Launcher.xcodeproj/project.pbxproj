@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F663A5717EC439A00CA4A43 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F663A5617EC439A00CA4A43 /* Cocoa.framework */; };
+		74989E661CDE2D1400DAD773 /* IPythonNotebookLauncherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74989E611CDE2D1400DAD773 /* IPythonNotebookLauncherAppDelegate.m */; };
+		74989E671CDE2D1400DAD773 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74989E621CDE2D1400DAD773 /* main.m */; };
+		74989E711CDE2F0600DAD773 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74989E6B1CDE2F0600DAD773 /* MainMenu.xib */; };
+		74989E721CDE2F0600DAD773 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74989E6D1CDE2F0600DAD773 /* InfoPlist.strings */; };
+		74989E731CDE2F0600DAD773 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 74989E6F1CDE2F0600DAD773 /* icon.icns */; };
+		74989E741CDE2F0600DAD773 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74989E701CDE2F0600DAD773 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F663A5317EC439A00CA4A43 /* IPython Notebook Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IPython Notebook Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F663A5617EC439A00CA4A43 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2F663A5917EC439A00CA4A43 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2F663A5A17EC439A00CA4A43 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2F663A5B17EC439A00CA4A43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		74989E5F1CDE2D1400DAD773 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		74989E601CDE2D1400DAD773 /* IPythonNotebookLauncherAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPythonNotebookLauncherAppDelegate.h; sourceTree = "<group>"; };
+		74989E611CDE2D1400DAD773 /* IPythonNotebookLauncherAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPythonNotebookLauncherAppDelegate.m; sourceTree = "<group>"; };
+		74989E621CDE2D1400DAD773 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74989E6C1CDE2F0600DAD773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		74989E6E1CDE2F0600DAD773 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		74989E6F1CDE2F0600DAD773 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		74989E701CDE2F0600DAD773 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F663A5017EC439A00CA4A43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F663A5717EC439A00CA4A43 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F663A4A17EC439A00CA4A43 = {
+			isa = PBXGroup;
+			children = (
+				74989E6A1CDE2F0600DAD773 /* Resources */,
+				74989E591CDE2D1400DAD773 /* Sources */,
+				2F663A5517EC439A00CA4A43 /* Frameworks */,
+				2F663A5417EC439A00CA4A43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F663A5417EC439A00CA4A43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F663A5317EC439A00CA4A43 /* IPython Notebook Launcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F663A5517EC439A00CA4A43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F663A5617EC439A00CA4A43 /* Cocoa.framework */,
+				2F663A5817EC439A00CA4A43 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F663A5817EC439A00CA4A43 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F663A5917EC439A00CA4A43 /* AppKit.framework */,
+				2F663A5A17EC439A00CA4A43 /* CoreData.framework */,
+				2F663A5B17EC439A00CA4A43 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		74989E591CDE2D1400DAD773 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				74989E5F1CDE2D1400DAD773 /* Prefix.pch */,
+				74989E601CDE2D1400DAD773 /* IPythonNotebookLauncherAppDelegate.h */,
+				74989E611CDE2D1400DAD773 /* IPythonNotebookLauncherAppDelegate.m */,
+				74989E621CDE2D1400DAD773 /* main.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		74989E6A1CDE2F0600DAD773 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74989E6B1CDE2F0600DAD773 /* MainMenu.xib */,
+				74989E6D1CDE2F0600DAD773 /* InfoPlist.strings */,
+				74989E6F1CDE2F0600DAD773 /* icon.icns */,
+				74989E701CDE2F0600DAD773 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F663A5217EC439A00CA4A43 /* IPython Notebook Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F663A8417EC439A00CA4A43 /* Build configuration list for PBXNativeTarget "IPython Notebook Launcher" */;
+			buildPhases = (
+				2F663A4F17EC439A00CA4A43 /* Sources */,
+				2F663A5017EC439A00CA4A43 /* Frameworks */,
+				2F663A5117EC439A00CA4A43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IPython Notebook Launcher";
+			productName = IPythonNotebookLauncher;
+			productReference = 2F663A5317EC439A00CA4A43 /* IPython Notebook Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F663A4B17EC439A00CA4A43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IPythonNotebookLauncher;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					2F663A5217EC439A00CA4A43 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2F663A4E17EC439A00CA4A43 /* Build configuration list for PBXProject "IPython Notebook Launcher" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F663A4A17EC439A00CA4A43;
+			productRefGroup = 2F663A5417EC439A00CA4A43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F663A5217EC439A00CA4A43 /* IPython Notebook Launcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F663A5117EC439A00CA4A43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74989E711CDE2F0600DAD773 /* MainMenu.xib in Resources */,
+				74989E741CDE2F0600DAD773 /* Info.plist in Resources */,
+				74989E721CDE2F0600DAD773 /* InfoPlist.strings in Resources */,
+				74989E731CDE2F0600DAD773 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F663A4F17EC439A00CA4A43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74989E671CDE2D1400DAD773 /* main.m in Sources */,
+				74989E661CDE2D1400DAD773 /* IPythonNotebookLauncherAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		74989E6B1CDE2F0600DAD773 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74989E6C1CDE2F0600DAD773 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		74989E6D1CDE2F0600DAD773 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74989E6E1CDE2F0600DAD773 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F663A8217EC439A00CA4A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_TESTABILITY = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx10.11;
+			};
+			name = Debug;
+		};
+		2F663A8317EC439A00CA4A43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx10.11;
+			};
+			name = Release;
+		};
+		2F663A8517EC439A00CA4A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.kuramae.sfo.takumaw.ipython-notebook-launcher-for-mac";
+				PRODUCT_NAME = "IPython Notebook Launcher";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2F663A8617EC439A00CA4A43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.kuramae.sfo.takumaw.ipython-notebook-launcher-for-mac";
+				PRODUCT_NAME = "IPython Notebook Launcher";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F663A4E17EC439A00CA4A43 /* Build configuration list for PBXProject "IPython Notebook Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F663A8217EC439A00CA4A43 /* Debug */,
+				2F663A8317EC439A00CA4A43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F663A8417EC439A00CA4A43 /* Build configuration list for PBXNativeTarget "IPython Notebook Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F663A8517EC439A00CA4A43 /* Debug */,
+				2F663A8617EC439A00CA4A43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F663A4B17EC439A00CA4A43 /* Project object */;
+}

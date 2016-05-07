@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="IPython Notebook Launcher" id="56">
+                    <menu key="submenu" title="IPython Notebook Launcher" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About IPython Notebook Launcher" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129"/>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide IPython Notebook Launcher" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit IPython Notebook Launcher" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <menu id="537">
+            <items>
+                <menuItem title="Status goes here..." enabled="NO" id="538">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="539"/>
+                <menuItem title="Open in browser..." id="556">
+                    <attributedString key="attributedTitle"/>
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="iPythonOpenBrowser:" target="-1" id="joU-PW-vLS"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="562"/>
+                <menuItem title="Settings" id="564">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Settings" id="565">
+                        <items>
+                            <menuItem title="Open in browser on launch" id="YCg-ur-xFU">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="toggleUserDefaultsStartIPythonOnStartup:" target="494" id="EHV-Qt-pUX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open HTTPS in browser" id="NAe-2X-mKL">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="toggleUserDefaultsOpenHTTPSinBrowser:" target="494" id="16x-sw-qFs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4yQ-rZ-ndm"/>
+                            <menuItem title="Open profile directory..." id="566">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="iPythonOpenConfigDirectory:" target="-1" id="570"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Configure IPython" id="567">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="iPythonOpenConfigFile:" target="-1" id="572"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Configure IPython Notebook" id="568">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="iPythonOpenConfigNotebookFile:" target="-1" id="573"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="555"/>
+                <menuItem title="Start" id="543">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="iPythonStart:" target="-1" id="574"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Stop" id="542">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="iPythonStop:" target="-1" id="575"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Restart" id="558">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="iPythonRestart:" target="-1" id="576"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="540"/>
+                <menuItem title="Quit IPython Notebook Launcher" id="541">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-1" id="554"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="494" customClass="IPythonNotebookLauncherAppDelegate">
+            <connections>
+                <outlet property="menuItemIPRestart" destination="558" id="559"/>
+                <outlet property="menuItemIPStart" destination="543" id="550"/>
+                <outlet property="menuItemIPStop" destination="542" id="551"/>
+                <outlet property="menuItemOpenHTTPSinBrowser" destination="NAe-2X-mKL" id="cNi-zc-FS2"/>
+                <outlet property="menuItemStartIPythonOnStartup" destination="YCg-ur-xFU" id="jfr-SR-vYb"/>
+                <outlet property="menuItemStatusline" destination="538" id="553"/>
+                <outlet property="statusMenu" destination="537" id="544"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+    </objects>
+</document>
