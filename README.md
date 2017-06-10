@@ -1,8 +1,7 @@
 IPython Notebook Launcher.app
 ====================
 
-(c)2014 WATANABE Takuma <takumaw@sfo.kuramae.ne.jp>
-
+(C)2014 WATANABE Takuma <takumaw@sfo.kuramae.ne.jp>
 
 IPython Notebook Launcher.app launches IPython Notebook inside your mac's status menu.
 Current version is 0.1.1.
@@ -16,6 +15,11 @@ Screenshots
 -----------
 
 ![screenshot](https://github.com/takumaw/ipython-notebook-launcher-for-mac/raw/master/Extra/screenshot.png)
+
+License
+-------
+
+License: GPL v2.
 
 Release Note
 ------------
