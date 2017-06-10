@@ -14,7 +14,7 @@ Download IPython Launcer.app.zip from releases.
 Screenshots
 -----------
 
-![screenshot](https://github.com/takumaw/ipython-notebook-launcher-for-mac/raw/master/Extra/screenshot.png)
+![screenshot](./Extra/screenshot.png)
 
 License
 -------
